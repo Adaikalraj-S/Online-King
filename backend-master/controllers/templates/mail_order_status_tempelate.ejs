@@ -1,0 +1,184 @@
+<style>
+    /* General Styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    /* Header */
+    .header {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        background: linear-gradient(90deg, #4caf50 0%, #2e7d32 100%);
+        border-radius: 10px 10px 0 0;
+    }
+
+    /* Content */
+    .content {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .greeting {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #333333;
+    }
+
+    .message {
+        font-size: 16px;
+        color: #666666;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .order-details {
+        margin: 20px 0;
+        padding: 15px;
+        background: #f1f8e9;
+        border-left: 5px solid #4caf50;
+        border-radius: 5px;
+        color: #333333;
+    }
+
+    .status {
+        font-size: 18px;
+        font-weight: bold;
+        color: #4caf50;
+    }
+
+    .product-list {
+        margin: 20px 0;
+        padding: 15px;
+        background: #e3f2fd;
+        border-left: 5px solid #2196f3;
+        border-radius: 5px;
+    }
+
+    .product-item {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #333333;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #999999;
+        text-align: center;
+    }
+
+    .footer a {
+        color: #4caf50;
+        text-decoration: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        .container {
+            padding: 15px;
+        }
+
+        .header {
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        .greeting,
+        .message,
+        .order-details,
+        .footer,
+        .product-item {
+            font-size: 14px;
+        }
+
+        .status {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .container {
+            padding: 10px;
+        }
+
+        .header {
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .greeting,
+        .message,
+        .order-details,
+        .footer,
+        .product-item {
+            font-size: 12px;
+        }
+
+        .status {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header">Order Update</div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Greeting -->
+        <div class="greeting">Hello <strong><%= user_name %></strong>,</div>
+
+        <!-- Message -->
+        <div class="message">
+            We’re reaching out to inform you about the latest update on your order. Here are the details:
+        </div>
+
+        <!-- Order Details -->
+        <div class="order-details">
+            <p><strong>Order ID:</strong> <%= order_id %></p>
+            <p><strong>Order Status:</strong> <span class="status"><%= order_status %></span></p>
+            <p><span class="status"><%= order_status_message %></span></p>
+        </div>
+
+        <!-- Product List -->
+        <div class="product-list">
+            <p><strong>Products:</strong></p>
+            <% products.forEach(function(product) { %>
+                <div class="product-item">
+                    <p><strong>Name:</strong> <%= product.product_name %></p>
+                    <p><strong>Quantity:</strong> <%= product.order_details.quantity %></p>
+                </div>
+            <% }); %>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="message">
+            If you have any questions or concerns about your order, please don’t hesitate to contact our support team.
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Thank you for choosing <%= application_name %>. Need help? <a href="mailto:support@onlineking.in">Contact Support</a>.
+    </div>
+</div>

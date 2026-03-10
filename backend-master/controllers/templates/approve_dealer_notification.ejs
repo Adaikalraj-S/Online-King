@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer Approval Notification</title>
+</head>
+
+<body style="font-family: Arial, sans-serif;">
+
+    <div
+        style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid black; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); border-radius: 15px;">
+        <div class="logo"
+            style="display: flex !important; justify-content: space-between !important; align-items: center !important;">
+            <img src="https://kardify.netlify.app/assets/images/logo.png" alt="Company Logo"
+                width="50" height="50" style="vertical-align: middle;">
+            <h2 style="color: #000000;">Dealer Approval Notification</h2>
+        </div>
+
+
+        <p>Congratulations! Your Dealer application has been approved. You are now an approved Dealer with Kardify.
+        </p>
+
+        <h3>Dealer Details:</h3>
+        <ul>
+            <li><strong>Dealer Name:</strong>
+                <%= dealerName %>
+            </li>
+            <li><strong>Phone Number:</strong>
+                <%= dealerPhone %>
+            </li>
+            <li><strong>Email:</strong>
+                <%= dealerEmail %>
+            </li>
+        </ul>
+
+        <p>Thank you for choosing to work with us. We look forward to a successful partnership.</p>
+        <p>Best Regards,<br> Kardify</p>
+
+    </div>
+
+</body>
+
+</html>

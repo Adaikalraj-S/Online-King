@@ -1,0 +1,47 @@
+<style>
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .header {
+        font-size: 2.5em;
+        text-transform: uppercase;
+        background: rgb(188,229,255);
+        background: linear-gradient(90deg, rgba(188,229,255,1) 0%, rgba(0,212,255,1) 100%);
+        color: white;
+        padding: 10px;
+    }
+    .description {
+      padding: 5px;
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    .content {
+        padding: 10px;
+        background: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .message {
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+    .otp {
+    font-size: 4em;
+    letter-spacing: 1em;
+    text-transform: uppercase;
+    }
+    </style>
+    
+    <div class="container">
+        <div class="header"><%= application_name %></div>
+        <div class="description"><%= about_what %></div>
+        <div class="content">
+            <div class="message">Hello <%= user_name %>, here is the otp to verify your acount.</div>
+            <div class="otp"><%= otp %></div>
+        </div>
+    </div>

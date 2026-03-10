@@ -1,0 +1,171 @@
+# HOST DETAILS
+HOST=localhost
+# HOST=19.168.68.122
+PORT=4000
+#ENVIRONMENT='development'
+ENVIRONMENT=local
+
+# LOCAL_URL=http://localhost:3030
+
+
+# JWT SECRET
+JWTSECRET=3sZPYQv8nnrWb4TGGj4or35H8L2FgaO1YgAjEA3Gf2z95N7p2EKyCly0_UmIJDzs
+# ENCRYPTION KEY
+# KEY=b17452658fe15be849911e248820223cda75c3b28c8d4c11cca35fec5603fca2
+
+# DATABSE DETAILS Local
+DATABASE=kingonline
+DB_USER=root
+DB_PASS=
+DB_DRIVER=mysql
+DB_MULST=true
+
+
+
+# DATABSE DETAILS Live 
+# DATABASE=kardify
+# DB_USER=ubuntu
+# DB_PASS=Impact@34
+# DB_DRIVER=mysql
+# DB_MULST=true
+
+# MAIL HOST 
+MAIL_HOST=mail.jurysoftprojects.com
+MAIL_PORT=465
+
+# MAIL_SERVICE = gmail
+MAIL_USER=close2buy@jurysoftprojects.com
+MAIL_PASS=Impact@34
+
+
+# MSG91
+OTP_SEND_URL=https://control.msg91.com/api/v5/otp
+MSG91_OTP_TEMP_ID=653798add6fc053e1c6ca422
+MSG91_AUTH_KEY=408138AgC0dhWTx3Sp65377898P1
+
+
+#shiprocket credentials
+SHIPROCKET_TOKEN_API_URL=https://apiv2.shiprocket.in/v1/external/auth/login
+SHIPROCKET_SHIPPING_PRICE_API_URL=https://apiv2.shiprocket.in/v1/external/courier/serviceability/
+SHIPROCKET_CREATE_ORDER_API_URL=https://apiv2.shiprocket.in/v1/external/orders/create/adhoc
+SHIPROCKET_TRACK_ORDER_API_URL=https://apiv2.shiprocket.in/v1/external/courier/track
+
+#phonepe credentials
+PHONE_PAY_MERCHANT_ID=099eb0cd-02cf-4e2a-8aca-3e6c6aff0399
+PHONE_PAY_LIVE_URL=https://api.phonepe.com/apis/hermes/pg/v1/pay
+PHONE_PAY_STATUS_LIVE_KEY=https://api.phonepe.com/apis/hermes/pg/v1
+PHONE_PAY_STATUS_TEST_KEY=https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1
+PHONE_PAY_TEST_URL=https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1/pay
+
+PHONE_PAY_SALT_KEY=099eb0cd-02cf-4e2a-8aca-3e6c6aff0399
+
+#Phoneapay url details
+REDIRECT_LOCAL_URL=http://localhost:3000/profile/myaccount
+LOCAL_CALLBACK_URL=http://0.0.0.0:4000/api/phonepe-server-callback
+
+REDIRECT_LIVE_URL=
+LIVE_CALLBACK_URL=
+
+#Razor Pay credentials
+RAZORPAY_TEST_KEY_ID=rzp_test_ga7xkCdPi19XQ2
+RAZOR_TEST_KEY_SECRET=ZNqNY7nizJsDGSxclx4ibaz8
+
+RAZORPAY_KEY_ID=
+RAZOR_KEY_SECRET=
+
+
+LIVE ENVIRONMENT
+# HOST DETAILS
+HOST=0.0.0.0
+# HOST=19.168.68.122
+PORT=4000
+#ENVIRONMENT='development'
+ENVIRONMENT=development
+
+
+# LOCAL_URL=http://localhost:3030
+
+
+
+# JWT SECRET
+JWTSECRET=3sZPYQv8nnrWb4TGGj4or35H8L2FgaO1YgAjEA3Gf2z95N7p2EKyCly0_UmIJDzs
+# ENCRYPTION KEY
+KEY=b17452658fe15be849911e248820223cda75c3b28c8d4c11cca35fec5603fca2
+
+
+# DATABSE DETAILS Local
+DATABASE=onlineking
+DB_USER=root
+DB_PASS=Impact@34
+DB_DRIVER=mysql
+DB_MULST=true
+
+
+
+
+
+# DATABSE DETAILS Live
+# DATABASE=kardify
+# DB_USER=ubuntu
+# DB_PASS=Impact@34
+# DB_DRIVER=mysql
+# DB_MULST=true
+
+
+# MAIL HOST
+#MAIL_HOST=smtp.onlineking.in
+#MAIL_PORT=587
+
+
+# MAIL_SERVICE = gmail
+#MAIL_USER=admin@onlineking.in
+#MAIL_PASS=Markiv@1988
+# MAIL HOST
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_SERVICE = gmail
+MAIL_USER=onlinekinghelp@gmail.com
+MAIL_PASS="yums pawb sxqu ulnj"
+
+
+# MSG91
+OTP_SEND_URL=https://control.msg91.com/api/v5/otp
+MSG91_OTP_TEMP_ID=653798add6fc053e1c6ca422
+MSG91_AUTH_KEY=408138AgC0dhWTx3Sp65377898P1
+
+
+
+#shiprocket credentials
+SHIPROCKET_TOKEN_API_URL=https://apiv2.shiprocket.in/v1/external/auth/login
+SHIPROCKET_SHIPPING_PRICE_API_URL=https://apiv2.shiprocket.in/v1/external/courier/serviceability/
+SHIPROCKET_CREATE_ORDER_API_URL=https://apiv2.shiprocket.in/v1/external/orders/create/adhoc
+SHIPROCKET_TRACK_ORDER_API_URL=https://apiv2.shiprocket.in/v1/external/courier/track
+
+
+#phonepe credentials
+PHONE_PAY_MERCHANT_ID=099eb0cd-02cf-4e2a-8aca-3e6c6aff0399
+PHONE_PAY_LIVE_URL=https://api.phonepe.com/apis/hermes/pg/v1/pay
+PHONE_PAY_STATUS_LIVE_KEY=https://api.phonepe.com/apis/hermes/pg/v1
+PHONE_PAY_STATUS_TEST_KEY=https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1
+PHONE_PAY_TEST_URL=https://api-preprod.phonepe.com/apis/pg-sandbox/pg/v1/pay
+
+
+PHONE_PAY_SALT_KEY=099eb0cd-02cf-4e2a-8aca-3e6c6aff0399
+
+
+#Phoneapay url details
+REDIRECT_LOCAL_URL=http://localhost:3000/profile/myaccount
+LOCAL_CALLBACK_URL=http://0.0.0.0:4000/api/phonepe-server-callback
+
+
+REDIRECT_LIVE_URL=
+LIVE_CALLBACK_URL=
+
+
+#Razor Pay credentials
+RAZORPAY_TEST_KEY_ID=rzp_test_ga7xkCdPi19XQ2
+RAZOR_TEST_KEY_SECRET=ZNqNY7nizJsDGSxclx4ibaz8
+
+
+RAZORPAY_KEY_ID=rzp_test_ga7xkCdPi19XQ2
+RAZOR_KEY_SECRET=ZNqNY7nizJsDGSxclx4ibaz8

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer Rejection Notification</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; ">
+
+    <div
+        style="max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid black; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); border-radius: 15px;">
+        <div class="logo"
+            style="display: flex !important; justify-content: space-between !important; align-items: center !important;">
+            <img src="http://103.191.208.98:3030/uploads/static_files/small-logo.png" alt="Company Logo"
+                width="50" height="50" style="vertical-align: middle;">
+            <h2 style="color: #000000;">Dealer Rejection Notification</h2>
+        </div>
+
+        <p>We regret to inform you that your dealer application has been rejected by Kardify.</p>
+
+        <h3>Dealer Details:</h3>
+        <ul>
+            <li><strong>Dealer Name:</strong>
+                <%= dealerName %>
+            </li>
+            <li><strong>Phone Number:</strong>
+                <%= dealerPhone %>
+            </li>
+            <li><strong>Email:</strong>
+                <%= dealerEmail %>
+            </li>
+            <li><strong>Reason for rejection:</strong>
+                <%= reason %>
+            </li>
+        </ul>
+
+
+        <p>We appreciate your interest, and we wish you the best in your future endeavors.</p>
+        <p>Best regards,<br> Kardify</p>
+
+    </div>
+
+</body>
+
+</html>

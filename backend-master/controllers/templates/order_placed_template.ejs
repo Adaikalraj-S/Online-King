@@ -1,0 +1,109 @@
+<style>
+    /* General Styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    /* Header */
+    .header {
+        font-size: 28px;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 20px;
+        background: linear-gradient(90deg, #4caf50 0%, #2e7d32 100%);
+        border-radius: 10px 10px 0 0;
+    }
+
+    /* Order Confirmation Message */
+    .confirmation-message {
+        margin: 20px 0;
+        font-size: 18px;
+        color: #333333;
+        font-weight: bold;
+    }
+
+    /* Order ID */
+    .order-id {
+        font-size: 16px;
+        color: #4caf50;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+
+    /* Product List */
+    .product-list {
+        margin: 20px 0;
+        padding: 15px;
+        background: #f1f8e9;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .product-item {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #333333;
+    }
+
+    .product-item strong {
+        color: #4caf50;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #999999;
+    }
+
+    .footer a {
+        color: #4caf50;
+        text-decoration: none;
+    }
+</style>
+
+<div class="container">
+    <!-- Header -->
+    <div class="header">Order Placed</div>
+
+    <!-- Order Confirmation Message -->
+    <div class="confirmation-message">
+        Your order has been successfully placed!
+    </div>
+
+    <!-- Order ID -->
+    <div class="order-id">
+        <strong>Order ID:</strong> <%= order_id %>
+    </div>
+
+    <!-- Product List -->
+    <div class="product-list">
+        <p><strong>Products:</strong></p>
+        <% products.forEach(function(product) { %>
+            <div class="product-item">
+                <p><strong>Name:</strong> <%= product.product_name %></p>
+                <p><strong>Quantity:</strong> <%= product.order_details.quantity %></p>
+            </div>
+        <% }); %>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Thank you for shopping with <%= application_name %>. Need assistance? <a href="mailto:support@onlineking.in">Contact Support</a>.
+    </div>
+</div>

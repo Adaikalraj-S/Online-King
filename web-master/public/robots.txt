@@ -1,0 +1,9 @@
+User-agent: *
+Disallow:
+Disallow: /admin/
+Disallow: /Cart/
+Disallow: /pre_order/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /Wishlist/
+Sitemap: https://onlineking.in

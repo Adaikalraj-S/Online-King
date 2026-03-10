@@ -1,0 +1,255 @@
+/* -----------------NavBar----------------------------- */
+.nav {
+  /* background-image: url("../Asset/HeaderBackground.png"); */
+  background-image: url("/HeaderBackground.png");
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+.inputNav {
+  padding-left: 43rem;
+}
+.searchHeader {
+  padding-left: 0px;
+}
+
+.color {
+  background-color: #45b348;
+}
+
+.right {
+  height: 100%;
+}
+.banner {
+  height: fit-content;
+}
+.categoryIcon {
+  margin-top: 1rem;
+}
+.SwipeNextBanner {
+  padding-right: 8rem;
+}
+.cabinet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+/* Arrivals */
+
+.Arrivals {
+  text-align: center;
+}
+
+.Arrivals {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.ChildCard {
+  width: calc(25% - 10px); /* 4 cards in a row with margin */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .ChildCard {
+    width: calc(50% - 10px); /* 2 cards in a row on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ChildCard {
+    width: calc(100% - 10px); /* 1 card in a row on even smaller screens */
+  }
+}
+
+/* Product */
+.product {
+  text-align: center;
+}
+.feature {
+  display: flex;
+  justify-content: space-around;
+}
+.product {
+  padding: 20px;
+}
+
+.product h1 {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Adjust as needed */
+}
+
+/* Style for ChildProduct */
+.ChildProduct {
+  background-color: #f0f0f0; /* Grey background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Deals */
+
+.deal {
+  text-align: center;
+  padding-top: 33px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.deals {
+  background-color: #74b491;
+  width: 90rem;
+  margin-left: 6rem;
+  border-radius: 20px;
+  height: 80rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px; /* Adjust as needed */
+}
+
+.card {
+  background-color: #74b491; /* Grey background with 70% opacity */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px white;
+}
+
+/* Style for the image */
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+/* Popular section */
+.popular_Heading {
+  text-align: center;
+}
+
+/* Banner */
+.client {
+  background-color: #f28f8f;
+  width: 100rem;
+  padding-left: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 25rem;
+  border-radius: 40px;
+}
+.ClientTitle {
+  text-align: center;
+}
+
+.clientImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem 1rem 2rem;
+}
+
+.clientImage .top-images,
+.clientImage .bottom-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px; /* Adjust as needed */
+}
+
+.clientImage .top-images img,
+.clientImage .bottom-images img {
+  width: calc(25% - 49px);
+  margin-right: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .clientImage .top-images,
+  .clientImage .bottom-images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .clientImage .top-images img,
+  .clientImage .bottom-images img {
+    margin-right: 0;
+    margin-bottom: 10px; /* Adjust the gap between rows */
+  }
+}
+.clientBackground {
+  background-color: #f28f8f;
+}
+/* WebSpecial */
+.information {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 4rem;
+  padding-right: 3rem;
+  gap: 8rem;
+}
+.FeatureText {
+  margin-left: -5rem;
+}
+
+/* footer */
+.FooterCombine {
+  background-color: #45b348;
+  color: white;
+  height: 22rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  gap: 2rem;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.socialmedia {
+  display: table-column;
+  gap: 3rem;
+}
+
+.no1-scroll {
+  overflow: hidden !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, Edge */
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }

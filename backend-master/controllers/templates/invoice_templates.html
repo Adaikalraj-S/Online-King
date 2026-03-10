@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .header p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .invoice-detials-container {
+    display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .details div {
+      font-size: 14px;
+    }
+
+    .details div p {
+      margin: 5px 0;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .table th, .table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .table th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    .summary {
+      text-align: right;
+      font-size: 14px;
+    }
+
+    .summary p {
+      margin: 5px 0;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      margin-top: 20px;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Tax Invoice</h1>
+      <p>(Original for Recipient)</p>
+    </div>
+    <!-- Invoice Details container -->
+     <div class="invoice-detials-container">
+        <div>
+            <div class="details">
+                <div>
+                <h3>Sold By:</h3>
+                <p>MADHU IT JUNCTION</p>
+                <p>Site No. 480, 3rd Floor,</p>
+                <p>3rd Stage, BEML Employees House Building</p>
+                <p>Co-Operative Society, Rajarajeshwari Nagar,</p>
+
+                <p>Bengaluru, Karnataka 560098</p>
+                </div>
+            </div> 
+        </div>
+        <div>
+               <!-- Billing and Shipping Details -->
+               <div class="details">
+                <div>
+                <h3>Billing Address</h3>
+                <p>{{billingName}}</p>
+                <p>{{billingAddress}}</p>
+                <p>{{billingCity}}, {{billingState}}, {{billingPostalCode}}</p>
+                <p>{{billingCountry}}</p>
+                <p><strong>GST No.:</strong>{{billingGST}}</p>
+                </div>
+                <div>
+                <h3>Shipping Address</h3>
+                <p>{{shippingName}}</p>
+                <p>{{shippingAddress}}</p>
+                <p>{{shippingCity}}, {{shippingState}}, {{shippingPostalCode}}</p>
+                <p>{{shippingCountry}}</p>
+                <p><strong>GST No.:</strong>{{shippingGST}}</p>
+
+                </div>
+            </div>
+               <!-- Invoice and Order Details -->
+                <div class="details">
+        <div>
+          <p><strong>Order Number:</strong> {{orderNumber}}</p>
+          <p><strong>Invoice Number:</strong> {{invoiceNumber}}</p>
+          <p><strong>Order Date:</strong> {{orderDate}}</p>
+          <p><strong>Invoice Date:</strong> {{invoiceDate}}</p>
+        </div>
+        <div>
+          <p><strong>Place of Supply:</strong> {{placeOfSupply}}</p>
+          <p><strong>Place of Delivery:</strong> {{placeOfDelivery}}</p>
+          <!-- <p><strong>GST Number:</strong> {{gstNumber}}</p> -->
+        </div>
+                </div>
+  
+                 
+        </div>
+     </div>
+ 
+
+    <!-- Itemized Table -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Sl. No</th>
+          <th>Description</th>
+          <th>Unit Price</th>
+          <th>Discount</th>
+          <th>Qty</th>
+          <th>Net Amount</th>
+          <th>Tax Rate</th>
+          <th>Tax Type</th>
+          <th>Tax Amount</th>
+          <th>Total Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#items}}
+        <tr>
+          <td>{{serialNumber}}</td>
+          <td>{{description}}</td>
+          <td>{{unitPrice}}</td>
+          <td>{{discount}}</td>
+          <td>{{quantity}}</td>
+          <td>{{netAmount}}</td>
+          <td>{{taxRate}}</td>
+          <td>{{taxType}}</td>
+          <td>{{taxAmount}}</td>
+          <td>{{totalAmount}}</td>
+        </tr>
+        {{/items}}
+      </tbody>
+    </table>
+
+    <!-- Summary -->
+    <div class="summary">
+      <p><strong>Total Tax:</strong> {{totalTax}}</p>
+      <p><strong>Total Amount:</strong> {{totalAmount}}</p>
+      <!-- <p><strong>Amount in Words:</strong> {{amountInWords}}</p> -->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Whether tax is payable under reverse charge: No</p>
+      <p>Thank you for your business!</p>
+    </div>
+  </div>
+</body>
+</html>
