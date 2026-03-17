@@ -1,10 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  // baseURL: "http://localhost:4000/",
-  //baseURL: "http://192.168.68.126:4002/",
-  //baseURL: "http://0.0.0.0:4002/",
-  baseURL: "https://api.onlineking.in/",
+  baseURL: "http://localhost:4000/",
   headers: {
     post: {
       Accept: "application/json",

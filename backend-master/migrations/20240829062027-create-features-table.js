@@ -14,7 +14,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: "users", // Assumes the 'users' table exists
+          model: "user", // Assumes the 'users' table exists
           key: "id",
         },
         onUpdate: "CASCADE",
@@ -34,7 +34,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: true,
         references: {
-          model: "combinations", // Assumes the 'combinations' table exists
+          model: "attributes_combinations", // Assumes the 'combinations' table exists
           key: "id",
         },
         onUpdate: "CASCADE",
